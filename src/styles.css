@@ -43,6 +43,17 @@ section img.background {
   transform: translate(-50%, 0);
   width: 100vmax;
   z-index: -1;
+  
+}
+.about{
+  position: "absolute";
+  top: 5rem;
+  left: 2rem; 
+  width: 40rem; 
+}
+img.background {
+  height: 60rem; 
+  width: auto; 
 }
 
 h1 {
@@ -51,13 +62,16 @@ h1 {
   font-weight: 400;
   line-height: 0.8;
   margin: 0;
+  padding-top:10rem;
+  padding-left:10rem;
 }
 
 h2 {
   font-size: 2rem;
   font-weight: 400;
   margin: 0;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-left:10rem;
 }
 
 h3 {
@@ -107,6 +121,34 @@ a:hover {
   grid-gap: 20px;
   grid-template-columns: 330px 300px;
   margin: 20px auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Adjust grid layout for mobile view */
+    padding: 20px;
+  }
+  section img.background{
+    padding-top: 300px;
+    height: 500px;
+    width: auto;
+  }
+  section.min-height {
+    min-height: 80vh;
+  }
+  h2{
+    padding-top:2rem;
+    padding-left:1rem;
+  }
+  h1{
+    padding-top:7rem;
+    padding-left:1rem;
+  }
+  .about{
+    position: "absolute";
+    top: 5rem;
+    left: 2rem;
+    width: 20rem;
+  }
 }
 
 .container .box {
